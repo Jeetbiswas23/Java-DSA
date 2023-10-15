@@ -72,6 +72,7 @@ Continue the outer loop for all values of i.
 After all sub-arrays are printed, print the total count, which is the value of tp.
 
 The console output for the given array { 2, 4, 6, 8, 10 } will be:2
+2
 24
 246
 2468
