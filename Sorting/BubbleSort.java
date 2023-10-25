@@ -4,7 +4,7 @@ public class BubbleSort {
     public static void bubblesort(int num[]) {
         for (int turn = 0; turn < num.length - 1; turn++) {
             for (int j = 0; j < num.length - 1 - turn; j++) {
-                if (num[j] > num[j + 1]) {
+                if (num[j] > num[j + 1]) { //If num[j] < num[j + 1] -> it will sort in descending order output is 5 4 3 2 1
                     //swap
                     int temp = num[j];
                     num[j] = num[j + 1];
