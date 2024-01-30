@@ -5,10 +5,10 @@ public class firstOccurance {
         if (i == arr.length) {
             return -1;
         }
-        if (arr[i] == key) {
+        if (arr[i] == key) {//Pehle Self Found
             return i;
         }
-        return firstOcc(arr, key, i+1);
+        return firstOcc(arr, key, i+1);//Then Lookforward
 
     }
 

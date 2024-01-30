@@ -6,9 +6,9 @@ public class lastoccurance {
             return -1; // Base case: key not found in the array
         }
 
-        int found = arrsot(arr, key, i + 1);
+        int found = arrsot(arr, key, i + 1); // Pehle Look Forward
 
-        if (found == -1 && arr[i] == key) {
+        if (found == -1 && arr[i] == key) {// then Self found
             return i; // Key found at index i
         }
 
@@ -16,8 +16,8 @@ public class lastoccurance {
     }
 
     public static void main(String args[]) {
-        int arr[] = { 1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 9 };
-        int key = 9;
+        int arr[] = { 5,5,5,5 };
+        int key = 5;
         int i = 0; // Initialize the index i
         int lastOccurrence = arrsot(arr, key, i);
         System.out.println(lastOccurrence);
